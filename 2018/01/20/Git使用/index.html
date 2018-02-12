@@ -15,7 +15,7 @@
 在github.com中new repository，名称与eclipse’s project的名字完全一致
 右击项目 - Team - Share Project
 
-执行完以上三步后 project将会变成接下来 ">
+1、2、3、执行完以上三步后 project将会">
     
 
     <!--Author-->
@@ -204,15 +204,16 @@
 <li>在github.com中new repository，名称与eclipse’s project的名字完全一致</li>
 <li>右击项目 - Team - Share Project</li>
 </ul>
-<p><img src="http://p40mt4wyq.bkt.clouddn.com/git_project_eclipse_1.PNG?imageMogr2/thumbnail/!50p"><br><img src="http://p40mt4wyq.bkt.clouddn.com/git_project_eclipse_2.PNG?imageMogr2/thumbnail/!50p"><br><img src="http://p40mt4wyq.bkt.clouddn.com/git_project_eclipse_3.PNG?imageMogr2/thumbnail/!50p"><br>执行完以上三步后 project将会变成<br><img src="http://p40mt4wyq.bkt.clouddn.com/git_project_eclipse_4.PNG?imageMogr2/thumbnail/!50p"><br>接下来 右击项目 - Team - Commit即可<br><img src="http://p40mt4wyq.bkt.clouddn.com/git_project_eclipse_5.PNG?imageMogr2/thumbnail/!50p"></p>
+<p>1、<img src="http://p40mt4wyq.bkt.clouddn.com/git_project_eclipse_1.PNG?imageMogr2/thumbnail/!50p"><br>2、<img src="http://p40mt4wyq.bkt.clouddn.com/git_project_eclipse_2.PNG?imageMogr2/thumbnail/!50p"><br>3、<img src="http://p40mt4wyq.bkt.clouddn.com/git_project_eclipse_3.PNG?imageMogr2/thumbnail/!50p"><br>执行完以上三步后 project将会变成<br><img src="http://p40mt4wyq.bkt.clouddn.com/git_project_eclipse_4.PNG"><br>4、接下来 右击项目 - Team - Commit即可<br><img src="http://p40mt4wyq.bkt.clouddn.com/git_project_eclipse_5.PNG?imageMogr2/thumbnail/!50p"></p>
 <h1 id="2、Git特点"><a href="#2、Git特点" class="headerlink" title="2、Git特点"></a>2、Git特点</h1><ul>
 <li>在本地建立资源库 【这将称作“分布式的版本控制”】</li>
 <li>使用<strong>git init xxx_directory</strong>时xxx_directory中将出现<strong>.git</strong>，<br>自<strong>init</strong>以后的所有<strong>commit</strong>对项目的改动都保存在<strong>.git</strong>中进行本地持久化</li>
 <li>无论是将代码分享给github.com还是其他电脑【不同的远端<strong>remote</strong>】都可将具体的address写在配置文件中–用于发送或者获取资源<strong>Push &amp; Pull</strong><br><img src="https://raw.githubusercontent.com/FiveJoy/pic/master/git01.png" alt="fae"></li>
 </ul>
 <hr>
-<p> 在git上存储图片资源过程<br> mkdir pic<br> cd pic<br> git init pic //初始化GitHub仓库<br> git add git01.png<br> git commit -m “create pic directory”<br> git remote origin add xxx.git //链接到远程库<br> git push origin master //推送到远程库</p>
-<h2 id="在GitHub中点击图片用新标签页打开即可得到图片资源链接"><a href="#在GitHub中点击图片用新标签页打开即可得到图片资源链接" class="headerlink" title=" 在GitHub中点击图片用新标签页打开即可得到图片资源链接"></a> 在GitHub中点击图片用新标签页打开即可得到图片资源链接</h2><h1 id="3、配置git"><a href="#3、配置git" class="headerlink" title="3、配置git"></a>3、配置git</h1><ul>
+<p> 在git上存储图片资源过程<br> mkdir pic<br> cd pic<br> git init pic //初始化GitHub仓库<br> git add git01.png<br> git commit -m “create pic directory”<br> git remote origin add xxx.git //链接到远程库<br> git push origin master //推送到远程库<br> 在GitHub中点击图片用新标签页打开即可得到图片资源链接</p>
+<hr>
+<h1 id="3、配置git"><a href="#3、配置git" class="headerlink" title="3、配置git"></a>3、配置git</h1><ul>
 <li>需要git命令行工具&amp;Git图形工具&amp;GitHub账户</li>
 <li>使用git bash写命令<br><strong>git config –global user.name XXX</strong><br><strong>git config –global user.email xxx@xx.com</strong></li>
 <li>配置行尾 不同平台CRLF&amp;LF比较烦人<br><strong>git config –global core.autocrlf true</strong><br><strong>git config –global core.autocrlf input</strong></li>
@@ -226,7 +227,8 @@
 </ul>
 <h2 id="git-add"><a href="#git-add" class="headerlink" title="git add"></a>git add</h2><p> <strong>git add xxx.txt xxxx.html</strong>                    ——将文本文件存到<strong>暂存区</strong>的持久化容器中</p>
 <h2 id="commit"><a href="#commit" class="headerlink" title="commit"></a>commit</h2><p>  <strong>git commit -m “描述信息”</strong>  只有add到暂存区的文件才会被commit到branch中<br>  暂存区的存在可以让你决定哪些修改了的文件不想提交可以不提交</p>
-<h2 id="git-status——用于帮助查看在上次提交到现在哪些文件做了改动或者增删"><a href="#git-status——用于帮助查看在上次提交到现在哪些文件做了改动或者增删" class="headerlink" title="git status——用于帮助查看在上次提交到现在哪些文件做了改动或者增删"></a>git status——用于帮助查看在上次提交到现在哪些文件做了改动或者增删</h2><ul>
+<h2 id="git-status"><a href="#git-status" class="headerlink" title="git status"></a>git status</h2><p>  用于帮助查看在上次提交到现在哪些文件做了改动或者增删</p>
+<ul>
 <li>查看git仓库状态</li>
 </ul>
 <h2 id="git-diff"><a href="#git-diff" class="headerlink" title="git diff"></a>git diff</h2><ul>
@@ -255,7 +257,8 @@
 <li><strong>git add -u .</strong> 如果多次使用 <strong>rm xxx</strong> 删除了多个文件，可以使用 <strong>git add -u .</strong> 遍历当前目录找出已经在file system中删除但还没讲删除信息存到暂存区的文件，并仍然加入暂存区</li>
 <li><strong>git rm –cached xxx.file</strong> 表示不从file system中删除，但是将删除信息保存到暂存区-&gt;意味着不再追踪该文件了</li>
 </ul>
-<h2 id="git-mv-在git中重命名-amp-移动文件是一件事情"><a href="#git-mv-在git中重命名-amp-移动文件是一件事情" class="headerlink" title="git mv 在git中重命名&amp;移动文件是一件事情"></a>git mv 在git中重命名&amp;移动文件是一件事情</h2><ul>
+<h2 id="git-mv"><a href="#git-mv" class="headerlink" title="git mv"></a>git mv</h2><p>在git中重命名&amp;移动文件是一件事情</p>
+<ul>
 <li><p><strong>git mv xxx.jpg src/xx1.jpg</strong><br>① 原位置的xxx.jpg消失<br>② 新出现了src/xx1.jpg</p>
 </li>
 <li><p>等同于<br><strong>mv   xxx.jpg   src/xx1.jpg</strong><br><strong>git   rm   xxx.jpg</strong><br><strong>git  add  /xx1.jpg</strong></p>
@@ -302,42 +305,30 @@
 <li><strong>git remote -v</strong>查看所有的远端</li>
 <li><strong>git branch -r</strong> 显示远端的分支<br><code>fetch push pull</code></li>
 <li><strong>git fetch 目的地名字</strong> 去目的地抓取信息，下载下来并放到远程追踪分支中</li>
-<li><strong>git pull</strong><br>git checkout feature1<br>git pull origin<br>表示在本地创建并进入feature1分支，然后获取远端的origin/feature1分支与本地feature1分支合并</li>
-</ul>
-<blockquote>
+<li><p><strong>git pull</strong><br>git checkout feature1<br>git pull origin<br>表示在本地创建并进入feature1分支，然后获取远端的origin/feature1分支与本地feature1分支合并</p>
 <p><strong>git push origin(目的地地址)</strong> 将全部内容推送到远端</p>
-</blockquote>
-<p><strong>fork</strong></p>
-<blockquote>
+</li>
+</ul>
+<h2 id="fork"><a href="#fork" class="headerlink" title="fork"></a>fork</h2><blockquote>
 <ul>
 <li>fork别人的项目将会在自己的账户下建立一份该项目的拷贝</li>
 <li>然后创建一个新的分支 对其进行添加修改等</li>
 <li>将修改提交 pull request</li>
 </ul>
 </blockquote>
-<p><strong>pull request</strong> 核心</p>
-<blockquote>
+<h2 id="pull-request-核心"><a href="#pull-request-核心" class="headerlink" title="pull request 核心"></a>pull request 核心</h2><blockquote>
 <ul>
 <li>将修改提交到其他的Git仓库中</li>
 <li>means 即使有权利直接将修改push到远端仓库，也不应该直接这样做</li>
 <li>应该使用建立分支-修改-pull request通知共同工作的人（pull request其实应当算作一个会话）</li>
 </ul>
 </blockquote>
-<p><strong>reset</strong> 三种模式</p>
-<p><code>1 . soft</code> 选取一条或多条commit，将其全部改变放到暂存区，然后在此基础上创建新的提交 <strong>git reset –soft HEAD~5</strong>将最新的5条commit都放回暂存区，然后将5条commit压缩为一个，然后直接提交  </p>
-<ul>
-<li>当意识到多个commit都是涉及的一个事件<br><code>2 . mixed（默认的）</code> 改变历史、改变工作目录（history&amp;working directory）<br><strong>git reset HEAD</strong> 将暂存区的改变移除（移动回工作区-工作目录working directory）<br><code>3 . hard</code> 即擦除再也不想要的操作<br><strong>git reset –hard HEAD~3</strong>将最新的3条commit删除【应该是对文本的修改等也是永久的删除了】<br><code>4 . reset和checkout的区别</code><br>reset针对的是整个仓库的改变历史【撤销或者改变某次提交】<br>checkout更加精细-针对目录或者文件级别【回到特定文件的某条提交历史COMMIT_INDEX上】<br><strong>git checkout file COMMIT_INDEX</strong> 将该INDEX下的该文件拉到当前工作区内</li>
-</ul>
+<h2 id="reset-三种模式"><a href="#reset-三种模式" class="headerlink" title="reset 三种模式"></a>reset 三种模式</h2><p><code>1 . soft</code> 选取一条或多条commit，将其全部改变放到暂存区，然后在此基础上创建新的提交 <strong>git reset –soft HEAD~5</strong>将最新的5条commit都放回暂存区，然后将5条commit压缩为一个，然后直接提交<br>【当意识到多个commit都是涉及的一个事件】<br><code>2 . mixed（默认的）</code> 改变历史、改变工作目录（history&amp;working directory）<br> <strong>git reset HEAD</strong> 将暂存区的改变移除（移动回工作区-工作目录working directory）<br><code>3 . hard</code> 即擦除再也不想要的操作<br> <strong>git reset –hard HEAD~3</strong>将最新的3条commit删除【应该是对文本的修改等也是永久的删除了】<br><code>4 . reset和checkout的区别</code><br>reset针对的是整个仓库的改变历史【撤销或者改变某次提交】<br>checkout更加精细-针对目录或者文件级别【回到特定文件的某条提交历史COMMIT_INDEX上】<br><strong>git checkout file COMMIT_INDEX</strong> 将该INDEX下的该文件拉到当前工作区内</p>
 <hr>
 <p><strong>reflog</strong><br>记录checkout commit rebase reset 通过7位的Hash码记录历史<br><code>git reset --hard xxxxx(7位hash码)</code></p>
 <hr>
-<p><strong>rebase</strong><br><code>git rebase</code>可以将已经存在的提交 放到今天开始的一个分支上<br>即任何时候都可以选择创建一个新的分支，然后把想要包含的变更的提交包含进去–使其比如说 专注于一个特性</p>
-<blockquote>
-<p><strong>git checkout xxx_branch</strong><br><strong>git rebase master</strong> 意为将当前xxx_branch的工作内容合并到master分支中<br>和merge不同的是，rebase是将当前分支的提交复写到master分支中<br>最后形成的效果就是-<code>该Git仓库的历史变化路径是一条直线</code><br><code>因此所形成了良好的阅读体验</code>–&gt;<strong>使用rebase而不是merge【历史路径清晰】</strong></p>
-<blockquote>
-<p>对于持续发布的项目（web services , web app等【需求一个更快的发布机制】）最好使用merge–如果一个分支的改变没有达到需求，可以创建一个新的分支来书写满足需求，然后把之前的改动合并掉<strong>【快速发表特色分支】</strong></p>
-</blockquote>
-</blockquote>
+<h2 id="rebase"><a href="#rebase" class="headerlink" title="rebase"></a>rebase</h2><p><code>git rebase</code>可以将已经存在的提交 放到今天开始的一个分支上<br>即任何时候都可以选择创建一个新的分支，然后把想要包含的变更的提交包含进去–使其比如说 专注于一个特性</p>
+<h2 id="git-checkout-xxx-branch"><a href="#git-checkout-xxx-branch" class="headerlink" title="git checkout xxx_branch"></a>git checkout xxx_branch</h2><p><strong>git rebase master</strong> 意为将当前xxx_branch的工作内容合并到master分支中<br>和merge不同的是，rebase是将当前分支的提交复写到master分支中<br>最后形成的效果就是-<code>该Git仓库的历史变化路径是一条直线</code><br><code>因此所形成了良好的阅读体验</code>–&gt;<strong>使用rebase而不是merge【历史路径清晰】</strong><br> 对于持续发布的项目（web services , web app等【需求一个更快的发布机制】）最好使用merge–如果一个分支的改变没有达到需求，可以创建一个新的分支来书写满足需求，然后把之前的改动合并掉<strong>【快速发表特色分支】</strong></p>
 
 
                 
