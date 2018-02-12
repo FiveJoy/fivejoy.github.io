@@ -15,10 +15,7 @@
 在github.com中new repository，名称与eclipse’s project的名字完全一致
 右击项目 - Team - Share Project
 
- 
-2、Git特点
-
-在本地建立资源库 【这将称">
+执行完以上三步后 project将会变成接下来 ">
     
 
     <!--Author-->
@@ -207,65 +204,32 @@
 <li>在github.com中new repository，名称与eclipse’s project的名字完全一致</li>
 <li>右击项目 - Team - Share Project</li>
 </ul>
-<p><img src="http://p40mt4wyq.bkt.clouddn.com/git_project_eclipse_1.PNG?imageMogr2/thumbnail/!50p"><br> <img src="https://raw.githubusercontent.com/FiveJoy/pic/master/git_project_eclipse_1.PNG" alt="fae"></p>
-<h1 id="2、Git特点"><a href="#2、Git特点" class="headerlink" title="2、Git特点"></a>2、Git特点</h1><blockquote>
-<ul>
+<p><img src="http://p40mt4wyq.bkt.clouddn.com/git_project_eclipse_1.PNG?imageMogr2/thumbnail/!50p"><br><img src="http://p40mt4wyq.bkt.clouddn.com/git_project_eclipse_2.PNG?imageMogr2/thumbnail/!50p"><br><img src="http://p40mt4wyq.bkt.clouddn.com/git_project_eclipse_3.PNG?imageMogr2/thumbnail/!50p"><br>执行完以上三步后 project将会变成<br><img src="http://p40mt4wyq.bkt.clouddn.com/git_project_eclipse_4.PNG?imageMogr2/thumbnail/!50p"><br>接下来 右击项目 - Team - Commit即可<br><img src="http://p40mt4wyq.bkt.clouddn.com/git_project_eclipse_5.PNG?imageMogr2/thumbnail/!50p"></p>
+<h1 id="2、Git特点"><a href="#2、Git特点" class="headerlink" title="2、Git特点"></a>2、Git特点</h1><ul>
 <li>在本地建立资源库 【这将称作“分布式的版本控制”】</li>
 <li>使用<strong>git init xxx_directory</strong>时xxx_directory中将出现<strong>.git</strong>，<br>自<strong>init</strong>以后的所有<strong>commit</strong>对项目的改动都保存在<strong>.git</strong>中进行本地持久化</li>
-<li>无论是将代码分享给github.com还是其他电脑【不同的远端<strong>remote</strong>】都可将具体的address写在配置文件中–用于发送或者获取资源<strong>Push &amp; Pull</strong><br><img src="https://raw.githubusercontent.com/FiveJoy/pic/master/git01.png" alt="fae"><blockquote>
-<p>在git上存储图片资源过程<br>mkdir pic<br>cd pic<br>git init pic //初始化GitHub仓库<br>git add git01.png<br>git commit -m “create pic directory”<br>git remote origin add xxx.git //链接到远程库<br>git push origin master //推送到远程库<br>在GitHub中点击图片用新标签页打开即可得到图片资源链接</p>
-</blockquote>
-</li>
+<li>无论是将代码分享给github.com还是其他电脑【不同的远端<strong>remote</strong>】都可将具体的address写在配置文件中–用于发送或者获取资源<strong>Push &amp; Pull</strong><br><img src="https://raw.githubusercontent.com/FiveJoy/pic/master/git01.png" alt="fae"></li>
 </ul>
-</blockquote>
-<h1 id="3、配置git"><a href="#3、配置git" class="headerlink" title="3、配置git"></a>3、配置git</h1><blockquote>
-<ul>
+<hr>
+<p> 在git上存储图片资源过程<br> mkdir pic<br> cd pic<br> git init pic //初始化GitHub仓库<br> git add git01.png<br> git commit -m “create pic directory”<br> git remote origin add xxx.git //链接到远程库<br> git push origin master //推送到远程库</p>
+<h2 id="在GitHub中点击图片用新标签页打开即可得到图片资源链接"><a href="#在GitHub中点击图片用新标签页打开即可得到图片资源链接" class="headerlink" title=" 在GitHub中点击图片用新标签页打开即可得到图片资源链接"></a> 在GitHub中点击图片用新标签页打开即可得到图片资源链接</h2><h1 id="3、配置git"><a href="#3、配置git" class="headerlink" title="3、配置git"></a>3、配置git</h1><ul>
 <li>需要git命令行工具&amp;Git图形工具&amp;GitHub账户</li>
-<li>使用git bash写命令<blockquote>
-<p><strong>git config –global user.name XXX</strong><br><strong>git config –global user.email xxx@xx.com</strong></p>
-</blockquote>
-</li>
-<li>配置行尾 不同平台CRLF&amp;LF比较烦人<blockquote>
-<p>git config –global core.autocrlf true<br>git config –global core.autocrlf input</p>
-</blockquote>
-</li>
-<li>设置颜色<blockquote>
-<p>git config –global color.ui auto</p>
-</blockquote>
-</li>
+<li>使用git bash写命令<br><strong>git config –global user.name XXX</strong><br><strong>git config –global user.email xxx@xx.com</strong></li>
+<li>配置行尾 不同平台CRLF&amp;LF比较烦人<br><strong>git config –global core.autocrlf true</strong><br><strong>git config –global core.autocrlf input</strong></li>
+<li>设置颜色<br><strong>git config –global color.ui auto</strong></li>
 <li>local &gt; global &gt; system 设置级别</li>
 </ul>
-</blockquote>
-<h1 id="4、常用命令"><a href="#4、常用命令" class="headerlink" title="4、常用命令"></a>4、常用命令</h1><p><strong>init</strong></p>
-<blockquote>
-<ul>
-<li>项目在本地已经存在-想把它做版本控制<blockquote>
-<p>cd Directory<br>git init //进入该项目目录直接<strong>git init</strong>即可【将Directory变成Git仓库】</p>
-</blockquote>
-</li>
+<h1 id="4、常用命令"><a href="#4、常用命令" class="headerlink" title="4、常用命令"></a>4、常用命令</h1><h2 id="init"><a href="#init" class="headerlink" title="init"></a>init</h2><ul>
+<li>项目在本地已经存在-想把它做版本控制<br><strong>cd Directory（（
+</strong>git init<strong> //进入该项目目录直接</strong>git init**即可【将Directory变成Git仓库】</li>
 <li>目录不存在 直接<strong>git init Directory</strong>即可   </li>
 </ul>
-</blockquote>
-<p><strong>git add</strong></p>
-<blockquote>
-<p><strong>git add xxx.txt xxxx.html</strong>                    ——将文本文件存到<strong>暂存区</strong>的持久化容器中</p>
-</blockquote>
-<p><strong>commit</strong></p>
-<blockquote>
-<p> <strong>git commit -m “描述信息”</strong>  只有add到暂存区的文件才会被commit到branch中</p>
-<blockquote>
-<p>暂存区的存在可以让你决定哪些修改了的文件不想提交可以不提交</p>
-</blockquote>
-</blockquote>
-<p><strong>git status</strong>——用于帮助查看在上次提交到现在哪些文件做了改动或者增删</p>
-<blockquote>
-<ul>
+<h2 id="git-add"><a href="#git-add" class="headerlink" title="git add"></a>git add</h2><p> <strong>git add xxx.txt xxxx.html</strong>                    ——将文本文件存到<strong>暂存区</strong>的持久化容器中</p>
+<h2 id="commit"><a href="#commit" class="headerlink" title="commit"></a>commit</h2><p>  <strong>git commit -m “描述信息”</strong>  只有add到暂存区的文件才会被commit到branch中<br>  暂存区的存在可以让你决定哪些修改了的文件不想提交可以不提交</p>
+<h2 id="git-status——用于帮助查看在上次提交到现在哪些文件做了改动或者增删"><a href="#git-status——用于帮助查看在上次提交到现在哪些文件做了改动或者增删" class="headerlink" title="git status——用于帮助查看在上次提交到现在哪些文件做了改动或者增删"></a>git status——用于帮助查看在上次提交到现在哪些文件做了改动或者增删</h2><ul>
 <li>查看git仓库状态</li>
 </ul>
-</blockquote>
-<p><strong>git diff</strong></p>
-<blockquote>
-<ul>
+<h2 id="git-diff"><a href="#git-diff" class="headerlink" title="git diff"></a>git diff</h2><ul>
 <li><strong>git diff</strong> 会得到 还未提交到暂存区的文件做了哪些改动—即只针对目前的工作区</li>
 <li><strong>git diff –staged</strong> 暂存区的文件与最近提交的历史文件之间的区别</li>
 <li><strong>git diff HEAD</strong> 工作区文件与最近提交的历史文件之间的区别（和暂存区文件状态无关）</li>
@@ -274,109 +238,63 @@
 <li><strong>git diff –color-words / git diff –word-diff</strong> 查看很长的一行中出现的小改动（直接使用git diff 会显示整个一行）</li>
 <li><strong>git diff -stat</strong> 表示只展示被修改部分的代码块</li>
 </ul>
-</blockquote>
-<p><strong>log</strong></p>
-<blockquote>
-<ul>
-<li>进入git仓库直接使用<strong>git log</strong> 能看到从最开始到最近一次的跳情况<blockquote>
-<p>提交引用<br>提交者的用户名和邮件地址<br>提交时间<br>commit message</p>
-</blockquote>
-</li>
+<h2 id="log"><a href="#log" class="headerlink" title="log"></a>log</h2><ul>
+<li>进入git仓库直接使用<strong>git log</strong> 能看到从最开始到最近一次的跳情况<br>提交引用<br>提交者的用户名和邮件地址<br>提交时间<br>commit message</li>
 </ul>
 <ul>
-<li><p><strong>git log –oneline</strong> 简短的log</p>
-<blockquote>
-<p>commit index<br>commit message</p>
-</blockquote>
+<li><p><strong>git log –oneline</strong> 简短的log<br>commit index<br>commit message</p>
 </li>
-<li><p><strong>git log –stat</strong> 更加复杂的log</p>
-<blockquote>
-<p>commit index<br>commit message<br>提交包含的文件（甚至包括其路径）<br>提交的文件所发生的相对改变【通过 + - 表示】</p>
-</blockquote>
+<li><p><strong>git log –stat</strong> 更加复杂的log<br>commit index<br>commit message<br>提交包含的文件（甚至包括其路径）<br>提交的文件所发生的相对改变【通过 + - 表示】</p>
 </li>
-<li><p><strong>git log –patch</strong> 两次提交之间内容的改变<br>-可以组合各个选项</p>
+<li><p><strong>git log –patch</strong> 两次提交之间内容的改变<br>-可以组合各个选项  <strong>git log –graph –all –decorate –oneline</strong></p>
 </li>
-<li><strong>git log –graph –all –decorate –oneline</strong></li>
 </ul>
-</blockquote>
-<p><strong>remove</strong></p>
-<blockquote>
-<ul>
+<h2 id="remove"><a href="#remove" class="headerlink" title="remove"></a>remove</h2><ul>
 <li><strong>git rm xxx.file</strong> 表示从file system中删除文件并将删除信息存到<strong>暂存区</strong>中。</li>
 <li><strong>rm xxx.file ; git rm xxx.file</strong> 和上一个的效果是一样的</li>
 <li><strong>git add -u .</strong> 如果多次使用 <strong>rm xxx</strong> 删除了多个文件，可以使用 <strong>git add -u .</strong> 遍历当前目录找出已经在file system中删除但还没讲删除信息存到暂存区的文件，并仍然加入暂存区</li>
 <li><strong>git rm –cached xxx.file</strong> 表示不从file system中删除，但是将删除信息保存到暂存区-&gt;意味着不再追踪该文件了</li>
 </ul>
-</blockquote>
-<p><strong>git mv</strong> 在git中重命名&amp;移动文件是一件事情</p>
-<blockquote>
-<ul>
-<li><p><strong>git mv xxx.jpg src/xx1.jpg</strong> </p>
-<blockquote>
-<p>① 原位置的xxx.jpg消失<br>② 新出现了src/xx1.jpg</p>
-</blockquote>
+<h2 id="git-mv-在git中重命名-amp-移动文件是一件事情"><a href="#git-mv-在git中重命名-amp-移动文件是一件事情" class="headerlink" title="git mv 在git中重命名&amp;移动文件是一件事情"></a>git mv 在git中重命名&amp;移动文件是一件事情</h2><ul>
+<li><p><strong>git mv xxx.jpg src/xx1.jpg</strong><br>① 原位置的xxx.jpg消失<br>② 新出现了src/xx1.jpg</p>
 </li>
-<li><p>等同于</p>
-<blockquote>
-<p><strong>mv   xxx.jpg   src/xx1.jpg</strong><br><strong>git   rm   xxx.jpg</strong><br><strong>git  add  /xx1.jpg</strong></p>
-</blockquote>
+<li><p>等同于<br><strong>mv   xxx.jpg   src/xx1.jpg</strong><br><strong>git   rm   xxx.jpg</strong><br><strong>git  add  /xx1.jpg</strong></p>
 </li>
 <li><p><strong>git add -A .</strong>    从当前目录开始无限向下递归找出被<strong>mv</strong>的文件并加入Git的暂存区</p>
 </li>
 <li><strong>git log –stat – 某个文件的路径</strong> 可以展示该文件的历史提交【此时如果该文件存在移动-则无法log】</li>
-<li><strong>git log –stat -M –follow – 该文件的路径</strong>可以告诉日志显示文件移动过程中跟踪文件<blockquote>
-<p>注意在git mv中有一个相似度的阈值（可以用-M来修改）具体怎么回事并不太明白<br><strong>特修斯之船</strong>一块木板坏了换一块-当所有的木板都被换了一遍时候还是特修斯之船了么？ 50%改变的时候就不是了–50%即是阈值</p>
-</blockquote>
-</li>
+<li><strong>git log –stat -M –follow – 该文件的路径</strong>可以告诉日志显示文件移动过程中跟踪文件<br>注意在git mv中有一个相似度的阈值（可以用-M来修改）具体怎么回事并不太明白<br><strong>特修斯之船</strong>一块木板坏了换一块-当所有的木板都被换了一遍时候还是特修斯之船了么？ 50%改变的时候就不是了–50%即是阈值</li>
 </ul>
-</blockquote>
-<p><strong>git ignore</strong></p>
-<blockquote>
-<blockquote>
-<p> <strong>touch .gitignore</strong> //编写.gitignore文件<br> vim .gitignore<br> temp/  表示忽略temp文件夹下的所有文件<br> git add ,commit 即可</p>
-</blockquote>
-<p>-<strong>git ls-files –others –ignored –exclude-standard</strong> 显示出来被Ignore的文件</p>
-</blockquote>
-<p><strong>branch</strong> 添加一个新特性、修复一个bug的工作都应该在一个新的branch中做<br>创建&amp;删除branch<br>在branch之间转换</p>
-<blockquote>
+<h2 id="git-ignore"><a href="#git-ignore" class="headerlink" title="git ignore"></a>git ignore</h2><p>  <strong>touch .gitignore</strong> //编写.gitignore文件<br> vim .gitignore<br> temp/  表示忽略temp文件夹下的所有文件<br> git add ,commit 即可</p>
+<ul>
+<li><strong>git ls-files –others –ignored –exclude-standard</strong> 显示出来被Ignore的文件</li>
+</ul>
+<h2 id="branch"><a href="#branch" class="headerlink" title="branch"></a>branch</h2><p> ❤添加一个新特性、修复一个bug的工作都应该在一个新的branch中做<br>创建&amp;删除branch<br>在branch之间转换</p>
 <ul>
 <li><strong>git branch name_branch</strong></li>
 <li><strong>git branch -d name_branch</strong></li>
 <li><strong>git branch</strong>可以查看当前处于哪个分支</li>
 </ul>
-</blockquote>
-<p><strong>git checkout</strong></p>
-<blockquote>
-<ul>
+<h2 id="git-checkout"><a href="#git-checkout" class="headerlink" title="git checkout"></a>git checkout</h2><ul>
 <li><strong>git checkout name01_branch</strong>切换到另一个分支</li>
 <li><strong>git checkout COMMIT_INDEX提交索引</strong>？？？？？？？？</li>
 <li><strong>git checkout – xxx.file</strong>会清理掉最后一次commit的内容</li>
 <li><strong>git checkout -b name02_branch</strong>表示创建并进入name02_branch分支</li>
 </ul>
-</blockquote>
-<p><strong>git  merge</strong></p>
-<blockquote>
-<blockquote>
-<ol>
+<h2 id="git-merge"><a href="#git-merge" class="headerlink" title="git  merge**"></a>git  merge**</h2><ol>
 <li><strong>git branch</strong>查看当前分支</li>
 <li><strong>git merge xxx_branch</strong>将xxx_branch分支与当前分支合并</li>
 </ol>
-</blockquote>
 <ul>
-<li><strong>Resolve Conflicts</strong><br>① git merge name04_branch 发生冲突<br>② 使用 git status查看冲突的文件<br>【出现 both modified src/temp/Tree.java】<br>③ vim  src/temp/Tree.java<blockquote>
-<p><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD</code> 在===以上当前分支的角度上 文本是什么样的<br><code>========</code> 分割线<br><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; xxx_branch</code> 在====以下 被xxx_branch分支角度上 文本是什么样的</p>
-</blockquote>
-</li>
-</ul>
+<li><p><strong>Resolve Conflicts</strong><br>① git merge name04_branch 发生冲突<br>② 使用 git status查看冲突的文件【出现 both modified src/temp/Tree.java】<br>③ vim  src/temp/Tree.java<br><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD</code> 在===以上当前分支的角度上 文本是什么样的<br><code>========</code> 分割线<br><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; xxx_branch</code> 在====以下 被xxx_branch分支角度上 文本是什么样的</p>
 <p>④ 修改当前文件，将以上三种分隔符删除只保留最后确定的文本内容 然后保存即可<br>⑤ git status–git add–git commit即可</p>
 <ul>
 <li><strong>Ignore Conflicts</strong><br>在执行git merge以后再次执行<strong>git merge –abort</strong>将会忽略冲突部分 + 清除暂存区 + 从当前分支的最后一次提交过程中清除工作树</li>
 <li><strong>git merge –squach</strong>????不是十分理解</li>
 </ul>
-</blockquote>
-<p><strong>对远端进行操控</strong></p>
-<blockquote>
-<p><code>Git仓库目前只存在与本地</code></p>
+</li>
+</ul>
+<h2 id="对远端进行操控"><a href="#对远端进行操控" class="headerlink" title="对远端进行操控"></a>对远端进行操控</h2><p> <code>Git仓库目前只存在与本地</code></p>
 <ul>
 <li>使用<strong>git remote add 目的地名字 目的地URL</strong> 将当前git仓库链接到远端</li>
 <li>使用<strong>git remote set-url 目的地名字 目的地新的URL</strong>可以更改URL</li>
@@ -384,11 +302,9 @@
 <li><strong>git remote -v</strong>查看所有的远端</li>
 <li><strong>git branch -r</strong> 显示远端的分支<br><code>fetch push pull</code></li>
 <li><strong>git fetch 目的地名字</strong> 去目的地抓取信息，下载下来并放到远程追踪分支中</li>
-<li><strong>git pull</strong><blockquote>
-<p>git checkout feature1<br>git pull origin<br>表示在本地创建并进入feature1分支，然后获取远端的origin/feature1分支与本地feature1分支合并</p>
-</blockquote>
-</li>
+<li><strong>git pull</strong><br>git checkout feature1<br>git pull origin<br>表示在本地创建并进入feature1分支，然后获取远端的origin/feature1分支与本地feature1分支合并</li>
 </ul>
+<blockquote>
 <p><strong>git push origin(目的地地址)</strong> 将全部内容推送到远端</p>
 </blockquote>
 <p><strong>fork</strong></p>
