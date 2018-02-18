@@ -10,6 +10,10 @@
 
     <!--Description-->
     
+        <meta name="description" content="线程的引入-将一个进程的资源分配和执行调度分开-各个线程可共享进程资源，又可以独立调度（线程是CPU调度的最基本单位）进程与线程的区别：
+
+总体————进程是系统进行资源分配和调度的一个独立单位，线程是是CPU调度和分派的基本单位a.地址空间和其它资源：进程间相互独立表现在内存空间&amp;amp;上下文环">
+    
 
     <!--Author-->
     
@@ -18,7 +22,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="FantaJuice"/>
+        <meta property="og:title" content="线程相关"/>
     
 
     <!--Open Graph Description-->
@@ -29,7 +33,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="article" />
     
 
     <!--Page Cover-->
@@ -40,7 +44,7 @@
 
     <!-- Title -->
     
-    <title>Archives: 2018 - FantaJuice</title>
+    <title>线程相关 - FantaJuice</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -142,114 +146,63 @@
 </nav>
 
     <!-- Main Content -->
-    
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
 
-<!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
 <header class="intro-header" style="background-image: url('https://raw.githubusercontent.com/FiveJoy/pic/master/joy.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>2018</h1>
+                <div class="post-heading">
+                    <h1>线程相关</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2018-02-16
+                        
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
             
-                <div class="post-preview">
-    <a href="/2018/02/16/JMM相关/">
-        <h1 class="post-title archive">
-            JMM相关
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2018-02-16
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/2018/02/16/线程相关/">
-        <h1 class="post-title archive">
-            线程相关
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2018-02-16
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/2018/02/11/Hello-FiveJooy/">
-        <h1 class="post-title archive">
-            Hello FiveJooy
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2018-02-11
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/2018/01/20/Git使用/">
-        <h1 class="post-title archive">
-            Git使用
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2018-01-20
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/2018/01/12/排序算法总结/">
-        <h1 class="post-title archive">
-            排序算法总结
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2018-01-12
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/2018/01/05/快排-s-Partition-相关问题/">
-        <h1 class="post-title archive">
-            快排's Partition()相关问题
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2018-01-05
-    </p>
-</div>
-            
-            <div class="archive-before-pagination"></div>
-            <ul class="pager">
-    
-    
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>线程的引入-将一个进程的资源分配和执行调度分开-各个线程可共享进程资源，又可以独立调度（线程是CPU调度的最基本单位）<br>进程与线程的区别：</p>
+<ul>
+<li>总体————进程是系统进行资源分配和调度的一个独立单位，线程是是CPU调度和分派的基本单位<br>a.地址空间和其它资源：进程间相互独立表现在内存空间&amp;上下文环境上，进程在执行过程中拥有独立的内存单元。同一进程的各线程间共享进程资源。线程自己基<br>本上不拥有系统资源,只拥有一点在运行中必不可少的资源(如程序计数器,一组寄存器和栈),但是它可与同属一个进程的其他的线程共享进程所拥有的全部资源.<br>b.通信：进程间通信IPC，线程间可以直接读写进程数据段（如全局变量）来进行通信——需要进程同步和互斥手段的辅助，以保证数据的一致性。<br>c.调度和切换：线程上下文切换比进程上下文切换要快得多。</li>
 </ul>
+<p>实现线程的三种方式<br>- </p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
         </div>
     </div>
-</div>
-
+</article>
 
     <!-- Footer -->
     <hr />
