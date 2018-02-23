@@ -10,11 +10,9 @@
 
     <!--Description-->
     
-        <meta name="description" content="熟能生巧【是小时候参加成语大赛讲的故事啊】&amp;amp; 所有记忆和学习过的东西全都是会忘记&amp;gt;&amp;gt;&amp;gt;&amp;gt;备忘录
- 1、如何发布博客
-
-首先要进入Hexo文件夹
-hexo n “文章标题” | 【hexo n layout_name “文章标题” layout_name 可以选择pos">
+        <meta name="description" content="第一次使用java爬取知乎推荐页
+在对问题””进行爬取时，得到的内容是
+1&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;&amp;lt;title&amp;gt;301 Moved Permanently&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body bgcolor=&#34;white&#34;&amp;gt;">
     
 
     <!--Author-->
@@ -24,7 +22,7 @@ hexo n “文章标题” | 【hexo n layout_name “文章标题” layout_name
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Hello FiveJooy"/>
+        <meta property="og:title" content="简易Java爬取知乎推荐页"/>
     
 
     <!--Open Graph Description-->
@@ -46,7 +44,7 @@ hexo n “文章标题” | 【hexo n layout_name “文章标题” layout_name
 
     <!-- Title -->
     
-    <title>Hello FiveJooy - FantaJuice</title>
+    <title>简易Java爬取知乎推荐页 - FantaJuice</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -156,13 +154,13 @@ hexo n “文章标题” | 【hexo n layout_name “文章标题” layout_name
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>Hello FiveJooy</h1>
+                    <h1>简易Java爬取知乎推荐页</h1>
                     
                     <span class="meta">
                         <!-- Date and Author -->
                         
                         
-                            2018-02-11
+                            2018-01-23
                         
                     </span>
                 </div>
@@ -184,52 +182,20 @@ hexo n “文章标题” | 【hexo n layout_name “文章标题” layout_name
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>熟能生巧【是小时候参加成语大赛讲的故事啊】&amp; 所有记忆和学习过的东西全都是会忘记&gt;&gt;&gt;&gt;备忘录</p>
-<p><strong> 1、如何发布博客</strong></p>
-<ul>
-<li>首先要进入Hexo文件夹</li>
-<li><strong>hexo n “文章标题”</strong> | 【hexo n layout_name “文章标题” layout_name 可以选择post/draft/page/默认为Post】</li>
-<li>进入\Hexo\source_posts 编辑该md文件</li>
-<li><strong>hexo g</strong>#表示生成</li>
-<li><strong>hexo d</strong>#部署</li>
-<li>或者直接【<strong>hexo d -g</strong>】</li>
-</ul>
-<hr>
-<p><strong>2 、更换theme</strong></p>
-<ul>
-<li><a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a> 找到喜欢的theme</li>
-<li>进入\Hexo\theme目录 git bash 并执行<strong>git clone <a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank" rel="noopener">https://github.com/klugjo/hexo-theme-clean-blog</a></strong> 等待下载完成</li>
-<li>打开\Hexo_config.yml 更改theme: hexo-theme-clean-blog !!!注意themes文件夹中的主体文件夹是什么名字，_config.yml中就改成什么【一定要对应！】</li>
-<li><strong>hexo clean</strong></li>
-<li><strong>hexo g -d</strong></li>
-</ul>
-<hr>
-<p><strong>3 、hexo-theme-clean-blog的使用说明</strong></p>
-<ul>
-<li>英文版 <a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank" rel="noopener">https://github.com/klugjo/hexo-theme-clean-blog</a></li>
-</ul>
-<hr>
-<p><strong>4 、Hexo的几个使用命令</strong></p>
-<ul>
-<li>① <strong>hexo n draft “草稿名称”</strong> 使用[draft布局]将会把文档创建到_drafts中且不会发布出去</li>
-<li>② <strong>hexo public “草稿名称”</strong>将草稿发布到post中</li>
-<li><strong>hexo new photo “My Gallery”</strong> ，Hexo在scaffolds目录中去寻找photo.md的模版文件，并基于它创建标题为My Gallery的文章</li>
-</ul>
-<hr>
-<p><strong>5 、hexo布局</strong><br>categories: </p>
-<ul>
-<li>Sports</li>
-<li>Baseball<br>tags:</li>
-<li>Injury</li>
-<li>Fight</li>
-<li>Shocking<br>【然而没有搞清楚tags和categories的区别O.0】</li>
-</ul>
-<hr>
-<p><strong>6 、各种文件格式记录</strong><br><img src="PIC's URL" width="100" height="100"><br><img src="PIC's URL?imageMogr2/thumbnail/!50p"> 使用七牛存储图片&amp;图片等比例缩小50%</p>
-<hr>
-<p> 所以无论是做了什么修改，最后只要执行<br> <strong>hexo clean</strong> 清除旧版本的静态页面<br> <strong>hexo g</strong>     生成新的网站静态页面<br> <strong>hexo d</strong> 　  部署到github上去即可使修改生效了</p>
-<hr>
-<p><strong>0 、搭建博客教程</strong><br><a href="https://my.oschina.net/ryaneLee/blog/638440?utm_medium=social&amp;utm_source=qq" target="_blank" rel="noopener">https://my.oschina.net/ryaneLee/blog/638440?utm_medium=social&amp;utm_source=qq</a></p>
+                <p>第一次使用java爬取知乎推荐页</p>
+<p>在对问题””进行爬取时，得到的内容是</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span><span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="tag">&lt;<span class="name">title</span>&gt;</span>301 Moved Permanently<span class="tag">&lt;/<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">head</span>&gt;</span><span class="tag">&lt;<span class="name">body</span> <span class="attr">bgcolor</span>=<span class="string">"white"</span>&gt;</span><span class="tag">&lt;<span class="name">center</span>&gt;</span><span class="tag">&lt;<span class="name">h1</span>&gt;</span>301 Moved Permanently<span class="tag">&lt;/<span class="name">h1</span>&gt;</span><span class="tag">&lt;/<span class="name">center</span>&gt;</span><span class="tag">&lt;<span class="name">hr</span>&gt;</span><span class="tag">&lt;<span class="name">center</span>&gt;</span>openresty<span class="tag">&lt;/<span class="name">center</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>本以为是程序多次访问，被知乎封了IP<br>但301的重定向错误还明明白白的提示出来，但是使用浏览器访问却可以正确打开问题链接<br><a href="https://stackoverflow.com/questions/18431440/301-moved-permanently" target="_blank" rel="noopener">https://stackoverflow.com/questions/18431440/301-moved-permanently</a></p>
+<p>于是更改代码为<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">URL url=<span class="keyword">new</span> URL(s_url);</span><br><span class="line">URLConnection connection = url.openConnection();</span><br><span class="line">String redirect = connection.getHeaderField(<span class="string">"Location"</span>);</span><br><span class="line"><span class="keyword">if</span> (redirect != <span class="keyword">null</span>)&#123;</span><br><span class="line">    connection = <span class="keyword">new</span> URL(redirect).openConnection();</span><br><span class="line">&#125;</span><br><span class="line">connection.connect();</span><br><span class="line">br=<span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> InputStreamReader(connection.getInputStream(),<span class="string">"UTF-8"</span>));</span><br></pre></td></tr></table></figure></p>
+<p>原来是 browser可自动重定向，但是使用URLConnection就得手动重定向。</p>
+<p>IDEA maven 添加dependency后要记得import</p>
+<p>爬虫<br>1.爬虫速度变快的具体量<br>1.5 是使用多线程还是线程池<br>1.7 thymeleaf的使用<br>===2.regex写的不太对导致最后出的结果不太正确<br>====3.重定向-知乎-不使用 URLConnection使用Apache的HTTPClient，不是commons中的HTTPclient是和HTTPcore一起的httpclient<br>4.设置代理防止屏蔽IP<br>====5.DFS爬虫–</p>
+<p>每个请求对应一个线程（thread-per-request）方法的不足之一是：为每个请求创建一个新线程的开销很大；为每个请求创建新线程的服务器在创建和销毁线程上花费的时间和消耗的系统资源要比花在处理实际的用户请求的时间和资源更多<br>在一个 JVM 里创建太多的线程可能会导致系统由于过度消耗内存而用完内存或“切换过度”。为了防止资源不足，服务器应用程序需要一些办法来限制任何给定时刻处理的请求数目。<br>线程池为线程生命周期开销问题和资源不足问题提供了解决方案。通过对多个任务重用线程，线程创建的开销被分摊到了多个任务上。其好处是，因为在请求到达时线程已经存在，所以无意中也消除了线程创建所带来的延迟。这样，就可以立即为请求服务，使应用程序响应更快。而且，通过适当地调整线程池中的线程数目，也就是当请求的数目超过某个阈值时，就强制其它任何新到的请求一直等待，直到获得一个线程来处理为止，从而可以防止资源不足</p>
+<p>visited[v]=true;<br>for(v的所有临界点w)<br>if(!visited(w)) DFS(w);}</p>
+<p>宽度遍历算法如下所示：</p>
+<p>(1) 顶点 V 入队列。<br>(2) 当队列非空时继续执行，否则算法为空。<br>(3) 出队列，获得队头节点 V，访问顶点 V 并标记 V 已经被访问。<br>(4) 查找顶点 V 的第一个邻接顶点 col。<br>(5) 若 V 的邻接顶点 col 未被访问过，则 col 进队列。<br>(6) 继续查找 V 的其他邻接顶点 col，转到步骤(5)，若 V 的所有邻接顶点都已经被访问过，则转到步骤(2)<br>需要爬取的URL放入to-do表【需要先进先出-LinkedList<object>】<br>已经爬取的放入visited表【需要不重复&amp;能快速查找-HashSet<object>】</object></object></p>
+<p>Commons的HttpClient项目现在是生命的尽头，不再被开发。它已取代由Apache HttpComponents项目HttpClient和的HttpCore模组，提供更好的性能和更大的灵活性。</p>
+<p>The difference between closing the content stream and closing the response is that the former will attempt to keep the underlying connection alive by consuming the entity content while the latter immediately shuts down and discards the connection.<br>关闭内容流和关闭响应之间的区别在于前者将试图通过使用实体内容来保持底层连接的生存，后者则会立即关闭并丢弃连接。</p>
 
 
                 
