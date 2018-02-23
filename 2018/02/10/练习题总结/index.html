@@ -10,18 +10,18 @@
 
     <!--Description-->
     
-        <meta name="description" content="1. С������ SmallSumLocation:  https://github.com/FiveJoy/Questions/tree/master/src/com/fivejoy/smallsum
-����һ�����飬�Ը������ÿһ��Ԫ��M������������б�MС��Ԫ">
+        <meta name="description" content="1. 小和问题 SmallSumLocation:  https://github.com/FiveJoy/Questions/tree/master/src/com/fivejoy/smallsum
+给出一个数组，对该数组的每一个元素M，求其左侧所有比M小的元素的和。将和累加并返回。① 使用暴力遍">
     
 
     <!--Author-->
     
-        <meta name="author" content="Joy-F">
+        <meta name="author" content="Joy��Five">
     
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="��ϰ���ܽ�"/>
+        <meta property="og:title" content="练习题总结"/>
     
 
     <!--Open Graph Description-->
@@ -43,7 +43,7 @@
 
     <!-- Title -->
     
-    <title>��ϰ���ܽ� - FantaJuice</title>
+    <title>练习题总结 - FantaJuice</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -153,7 +153,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>��ϰ���ܽ�</h1>
+                    <h1>练习题总结</h1>
                     
                     <span class="meta">
                         <!-- Date and Author -->
@@ -195,23 +195,23 @@
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <h2 id="1-С������-SmallSum"><a href="#1-С������-SmallSum" class="headerlink" title="1. С������ SmallSum"></a>1. С������ SmallSum</h2><p><strong>Location:</strong>  <a href="https://github.com/FiveJoy/Questions/tree/master/src/com/fivejoy/smallsum" target="_blank" rel="noopener">https://github.com/FiveJoy/Questions/tree/master/src/com/fivejoy/smallsum</a></p>
-<p>����һ�����飬�Ը������ÿһ��Ԫ��M������������б�MС��Ԫ�صĺ͡������ۼӲ����ء�<br>�� ʹ�ñ���������Ϊ������<br>�� �Ĺ鲢����<br>�Ը������ÿһ��Ԫ��M������������б�MС��Ԫ�صĺͣ�<br>��ʵҲ���Է�����������������ÿһ��Ԫ��M�������Ҳ��ж��ٸ�Ԫ�ر�����(������K��)������a*k��С�͡�����ۼӼ���<br>����ÿ���������Ҳ��ж��ٸ���������<br>///����С��=����С��+�Ҳ��С��+����merge������С��</p>
-<h2 id="2-��z����"><a href="#2-��z����" class="headerlink" title="2. ��ż����"></a>2. ��ż����</h2><p><strong>ʵ���ǣ��������ʵ��Ϊ�ȶ��ģ�&amp;&amp; ����ռ临�Ӷ� O(1)</strong><br>���������飬������������������࣬ż�������Ҳ�-���ұ�֤������ż����Դ��򶼲���<br>�����ļ����-  01stable sort�����ŵ��ȶ�ʵ�ַ����пտ��˽�һ��–��ʱ����ʵ��<br>�鲢-�鲢�����ڲ����淨ʵ��O(1)�Ķ���ռ�</p>
-<h2 id="3-������"><a href="#3-������" class="headerlink" title="3. ������"></a>3. ������</h2><p>һ����������������������Ȼ�󲻶ϵ�����ǰ���ֵ��ɾ����</p>
-<h2 id="4-����ֵMaxDiff"><a href="#4-����ֵMaxDiff" class="headerlink" title="4. ����ֵMaxDiff"></a>4. ����ֵMaxDiff</h2><p>��������–�����������������Ԫ�ص�����ֵ�Ƕ��٣�O(N)—����Ԫ����ʲô����-long long long ������<br>�⣺O(N)������ͨ����϶��ǲ��У�long long long ������ �޷�ȷ�����ݷ�Χ-�޷�ʹ�ü�������</p>
-<p>N���� N+1��Ͱ<br>���ع���һ��Ͱ�ڲ�����������������ֵ��<br>��ֵ��� ���ܳ��� �����������ǿ�Ͱ(eg.10,29��������ͬ��Ͱ&amp;��ֵΪ19) ���м��и���Ͱ�������ǿ�Ͱ(eg.19,30��������ͬ��Ͱ&amp;��ֵΪ11)</p>
-<p>ֻ�ǽ�����Ͱ�ĸ��ȴû��ʵ�ʽ�������ֻ���ռ�����Ͱ����Ϣ<br>��Ͱ�����޷���Bucket���������������ĸ��</p>
-<h2 id="5-������ʵ�ִ�С�̶���ջ-amp-����"><a href="#5-������ʵ�ִ�С�̶���ջ-amp-����" class="headerlink" title="5. ������ʵ�ִ�С�̶���ջ&amp;����"></a>5. ������ʵ�ִ�С�̶���ջ&amp;����</h2><h3 id="5-1-Stack"><a href="#5-1-Stack" class="headerlink" title="5.1 Stack"></a>5.1 Stack</h3><p>index��ʾ��һ���¼����Ԫ��Ӧ�����λ��<br>index=sizeʱ�����¼�����<br>index=0ʱ�����ٵ����ˡ�<br>pop-&gt;size–<br>peek-&gt;return<br>push-&gt;size++</p>
-<h3 id="5-2-Queue"><a href="#5-2-Queue" class="headerlink" title="5.2 Queue"></a>5.2 Queue</h3><p>start ��ʾ<br>end ��ʾ�¼ӵ������ȥ.�߼�������Ҫ�ص���ͷ—ֻҪsize����<br>start ָ�������pop()��ȥ����–ֻҪsize&gt;0<br>һ��ʹ��size��ϰ������end&amp;start����</p>
-<h2 id="6-ʵ��һ�������ջ����ʵ��ջ�L������ܵL����ϣ���ʵ�ַ���ջ����СԪ�صĲ�����"><a href="#6-ʵ��һ�������ջ����ʵ��ջ�L������ܵL����ϣ���ʵ�ַ���ջ����СԪ�صĲ�����" class="headerlink" title="6.ʵ��һ�������ջ����ʵ��ջ�Ļ������ܵĻ����ϣ���ʵ�ַ���ջ����СԪ�صĲ�����"></a>6.ʵ��һ�������ջ����ʵ��ջ�Ļ������ܵĻ����ϣ���ʵ�ַ���ջ����СԪ�صĲ�����</h2><p>��Ҫ��<br>1��pop��push��getMin������ʱ�临�Ӷȶ���O(1)��<br>2����Ƶ�ջ���Ϳ���ʹ���ֳɵ�ջ�ṹ��<br>�ⷨ��<br>׼������ջ��һ��Dataջ��һ��Minջ<br>��Push dataʱ����ѹ��Dataջ���ں�Min��top�Ƚϣ����data&lt;topѹ��data������ѹ��getMIN();</p>
-<h2 id="7-1-���o���ʵ��ջ"><a href="#7-1-���o���ʵ��ջ" class="headerlink" title="7.1 ���ö���ʵ��ջ"></a>7.1 ���ö���ʵ��ջ</h2><p>ͼ����ȱ���DFS�õ�ջ�ṹ-����Ҫ��ֻ��ʹ�ö���<br>��-ʹ�ö���ʵ��ͼ��DFS</p>
-<p>Points-<br>���캯����new<br>����Queue��queue,help�����������ָ��ת��</p>
-<h2 id="7-2-����ջʵ�ֶ���"><a href="#7-2-����ջʵ�ֶ���" class="headerlink" title="7.2 ����ջʵ�ֶ���"></a>7.2 ����ջʵ�ֶ���</h2><p>����ջ��popջ pushջ��<br>Ҫ��Ԫ��-ֻ��pushջ��ѹ<br>Ҫ��Ԫ��-ֻ��popջ�е�<br>push��popջ��Ԫ�غ�ʱ&amp;��ν��н����أ�<br>�� popջ������ж�����pushջ��Ԫ��һ����Ҫ��popջ�е���Ԫ��<br>�� popջisEmpty��pushջ�еĶ���Ҫһ����ȫ����popջ�У���Ҫ��<br><strong>import()����-������peek(),poll()֮ǰִ�У���import�������ж���Ҫ����Ҫ��ĵ��뼴��</strong></p>
-<p>ǰ������KMP<br><a href="https://www.nowcoder.com/questionTerminal/3d102a974f9143549db4d904ec816f66" target="_blank" rel="noopener">https://www.nowcoder.com/questionTerminal/3d102a974f9143549db4d904ec816f66</a></p>
-<h2 id="8ʵ��һ�ֹ�e���еLu"><a href="#8ʵ��һ�ֹ�e���еLu" class="headerlink" title="8ʵ��һ�ֹ�è���еĽṹ"></a>8ʵ��һ�ֹ�è���еĽṹ</h2><p>Ҫ�����£�<br>�û����Ե���add������cat���dog���ʵ����������У�<br>�û����Ե���pollAll�����������������е�ʵ�����ս����е��Ⱥ�˳�����ε�����<br>�û����Ե���pollDog��������������dog���ʵ�����ս����е��Ⱥ�˳�����ε�����<br>�û����Ե���pollCat��������������cat���ʵ�����ս����е��Ⱥ�˳�����ε�����<br>�û����Ե���isEmpty���������������Ƿ���dog��cat��ʵ����<br>�û����Ե���isDogEmpty���������������Ƿ���dog���ʵ����<br>�û����Ե���isCatEmpty���������������Ƿ���cat���ʵ������</p>
-<p>�ⷨ-���������С�1��6����è��è����-��è�Ǳ�è��2,3,4,5 �Ǵ����ֱ�ŵ�è��</p>
-<h2 id="9-��ϣ��-amp-��ϣ����"><a href="#9-��ϣ��-amp-��ϣ����" class="headerlink" title="9 ��ϣ��&amp;��ϣ����"></a>9 ��ϣ��&amp;��ϣ����</h2><p>hashcode()��ôʵ�֣�ͨ��md5����sha1<br>hashcode�����ʣ�<br>�� ���������޴���������޴�<br>�� same input��same output<br>�� different input-&gt;may be same output<br>�� ��ɢ��-<br>��ϣ�����ɢ�б�������������-��</p>
+                <h2 id="1-小和问题-SmallSum"><a href="#1-小和问题-SmallSum" class="headerlink" title="1. 小和问题 SmallSum"></a>1. 小和问题 SmallSum</h2><p><strong>Location:</strong>  <a href="https://github.com/FiveJoy/Questions/tree/master/src/com/fivejoy/smallsum" target="_blank" rel="noopener">https://github.com/FiveJoy/Questions/tree/master/src/com/fivejoy/smallsum</a></p>
+<p>给出一个数组，对该数组的每一个元素M，求其左侧所有比M小的元素的和。将和累加并返回。<br>① 使用暴力遍历作为对数器<br>② 改归并排序<br>对该数组的每一个元素M，求其左侧所有比M小的元素的和；<br>其实也可以反过来看：对数组中每一个元素M，看它右侧有多少个元素比它大(假设有K个)，就有a*k个小和。最后累加即可<br>【对每个数求其右侧有多少个数比它大】<br>///最后的小和=左侧的小和+右侧的小和+本次merge产生的小和</p>
+<h2 id="2-奇偶分区"><a href="#2-奇偶分区" class="headerlink" title="2. 奇偶分区"></a>2. 奇偶分区</h2><p><strong>实际是（快排如何实现为稳定的）&amp;&amp; 额外空间复杂度 O(1)</strong><br>给定个数组，将数组中奇数放在左侧，偶数放在右侧-并且保证奇数和偶数相对次序都不变<br>是论文级别的-  01stable sort【快排的稳定实现法】有空可了解一下–暂时不必实现<br>归并-归并排序内部缓存法实现O(1)的额外空间</p>
+<h2 id="3-堆排序"><a href="#3-堆排序" class="headerlink" title="3. 堆排序"></a>3. 堆排序</h2><p>一个容器，不断扔里面数，然后不断弹出当前最大值并删除它</p>
+<h2 id="4-最大差值MaxDiff"><a href="#4-最大差值MaxDiff" class="headerlink" title="4. 最大差值MaxDiff"></a>4. 最大差值MaxDiff</h2><p>数组无序–数组排序后相邻两个元素的最大差值是多少？O(N)—问清元素是什么类型-long long long 的类型<br>解：O(N)所以普通排序肯定是不行，long long long 的类型 无法确定数据范围-无法使用计数排序</p>
+<p>N个数 N+1个桶<br>不必关心一个桶内部的相邻两数的最大差值。<br>差值最大 可能出现 ①相邻两个非空桶(eg.10,29在两个不同的桶&amp;差值为19) ②中间有个空桶的两个非空桶(eg.19,30在两个不同的桶&amp;差值为11)</p>
+<p>只是借用了桶的概念，却没有实际进行排序，只是收集各个桶的信息<br>【桶排序无非是Bucket中让人最容易理解的概念】</p>
+<h2 id="5-用数组实现大小固定的栈-amp-队列"><a href="#5-用数组实现大小固定的栈-amp-队列" class="headerlink" title="5. 用数组实现大小固定的栈&amp;队列"></a>5. 用数组实现大小固定的栈&amp;队列</h2><h3 id="5-1-Stack"><a href="#5-1-Stack" class="headerlink" title="5.1 Stack"></a>5.1 Stack</h3><p>index表示下一个新加入的元素应放入的位置<br>index=size时不能新加入了<br>index=0时不能再弹出了。<br>pop-&gt;size–<br>peek-&gt;return<br>push-&gt;size++</p>
+<h3 id="5-2-Queue"><a href="#5-2-Queue" class="headerlink" title="5.2 Queue"></a>5.2 Queue</h3><p>start 表示<br>end 表示新加的数填到哪去.逻辑是填到最后要回到开头—只要size还有<br>start 指向的数是pop()出去的数–只要size&gt;0<br>一切使用size练习，而将end&amp;start解耦</p>
+<h2 id="6-实现一个特殊的栈，在实现栈的基本功能的基础上，再实现返回栈中最小元素的操作。"><a href="#6-实现一个特殊的栈，在实现栈的基本功能的基础上，再实现返回栈中最小元素的操作。" class="headerlink" title="6.实现一个特殊的栈，在实现栈的基本功能的基础上，再实现返回栈中最小元素的操作。"></a>6.实现一个特殊的栈，在实现栈的基本功能的基础上，再实现返回栈中最小元素的操作。</h2><p>【要求】<br>1．pop、push、getMin操作的时间复杂度都是O(1)。<br>2．设计的栈类型可以使用现成的栈结构。<br>解法：<br>准备两个栈，一个Data栈，一个Min栈<br>当Push data时，①压入Data栈，②和Min的top比较，如果data&lt;top压入data，否则压入getMIN();</p>
+<h2 id="7-1-仅用队列实现栈"><a href="#7-1-仅用队列实现栈" class="headerlink" title="7.1 仅用队列实现栈"></a>7.1 仅用队列实现栈</h2><p>图的深度遍历DFS用到栈结构-但是要求只能使用队列<br>故-使用队列实现图的DFS</p>
+<p>Points-<br>构造函数才new<br>两个Queue【queue,help】操作后进行指针转换</p>
+<h2 id="7-2-仅用栈实现队列"><a href="#7-2-仅用栈实现队列" class="headerlink" title="7.2 仅用栈实现队列"></a>7.2 仅用栈实现队列</h2><p>两个栈【pop栈 push栈】<br>要进元素-只向push栈中压<br>要出元素-只向pop栈中弹<br>push和pop栈中元素何时&amp;如何进行交换呢；<br>① pop栈中如果有东西，push栈中元素一定不要向pop栈中导入元素<br>② pop栈isEmpty后，push栈中的东西要一股脑全倒入pop栈中，不要留<br><strong>import()函数-可以在peek(),poll()之前执行，在import函数中判断需要不需要真的导入即可</strong></p>
+<p>前朝余孽KMP<br><a href="https://www.nowcoder.com/questionTerminal/3d102a974f9143549db4d904ec816f66" target="_blank" rel="noopener">https://www.nowcoder.com/questionTerminal/3d102a974f9143549db4d904ec816f66</a></p>
+<h2 id="8实现一种狗猫队列的结构"><a href="#8实现一种狗猫队列的结构" class="headerlink" title="8实现一种狗猫队列的结构"></a>8实现一种狗猫队列的结构</h2><p>要求如下：<br>用户可以调用add方法将cat类或dog类的实例放入队列中；<br>用户可以调用pollAll方法，将队列中所有的实例按照进队列的先后顺序依次弹出；<br>用户可以调用pollDog方法，将队列中dog类的实例按照进队列的先后顺序依次弹出；<br>用户可以调用pollCat方法，将队列中cat类的实例按照进队列的先后顺序依次弹出；<br>用户可以调用isEmpty方法，检查队列中是否还有dog或cat的实例；<br>用户可以调用isDogEmpty方法，检查队列中是否有dog类的实例；<br>用户可以调用isCatEmpty方法，检查队列中是否有cat类的实例。‘</p>
+<p>解法-狗进狗队列【1，6】，猫进猫队列-此猫非彼猫【2,3,4,5 是带数字标号的猫】</p>
+<h2 id="9-哈希表-amp-哈希函数"><a href="#9-哈希表-amp-哈希函数" class="headerlink" title="9 哈希表&amp;哈希函数"></a>9 哈希表&amp;哈希函数</h2><p>hashcode()怎么实现：通过md5或者sha1<br>hashcode的性质：<br>① 输入域无限大；输出域有限大<br>② same input，same output<br>③ different input-&gt;may be same output<br>④ 离散性-<br>哈希表就是散列表，链表会均匀增长-④</p>
 
 
                 
@@ -259,7 +259,7 @@
 
                     
                 </ul>
-                <p class="copyright text-muted">&copy; 2018 Joy-F<br></p>
+                <p class="copyright text-muted">&copy; 2018 Joy��Five<br></p>
                 <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
                 <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
             </div>
