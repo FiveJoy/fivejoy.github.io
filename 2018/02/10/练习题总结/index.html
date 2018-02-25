@@ -211,7 +211,15 @@
 <p>前朝余孽KMP<br><a href="https://www.nowcoder.com/questionTerminal/3d102a974f9143549db4d904ec816f66" target="_blank" rel="noopener">https://www.nowcoder.com/questionTerminal/3d102a974f9143549db4d904ec816f66</a></p>
 <h2 id="8实现一种狗猫队列的结构"><a href="#8实现一种狗猫队列的结构" class="headerlink" title="8实现一种狗猫队列的结构"></a>8实现一种狗猫队列的结构</h2><p>要求如下：<br>用户可以调用add方法将cat类或dog类的实例放入队列中；<br>用户可以调用pollAll方法，将队列中所有的实例按照进队列的先后顺序依次弹出；<br>用户可以调用pollDog方法，将队列中dog类的实例按照进队列的先后顺序依次弹出；<br>用户可以调用pollCat方法，将队列中cat类的实例按照进队列的先后顺序依次弹出；<br>用户可以调用isEmpty方法，检查队列中是否还有dog或cat的实例；<br>用户可以调用isDogEmpty方法，检查队列中是否有dog类的实例；<br>用户可以调用isCatEmpty方法，检查队列中是否有cat类的实例。‘</p>
 <p>解法-狗进狗队列【1，6】，猫进猫队列-此猫非彼猫【2,3,4,5 是带数字标号的猫】</p>
-<h2 id="9-哈希表-amp-哈希函数"><a href="#9-哈希表-amp-哈希函数" class="headerlink" title="9 哈希表&amp;哈希函数"></a>9 哈希表&amp;哈希函数</h2><p>hashcode()怎么实现：通过md5或者sha1<br>hashcode的性质：<br>① 输入域无限大；输出域有限大<br>② same input，same output<br>③ different input-&gt;may be same output<br>④ 离散性-<br>哈希表就是散列表，链表会均匀增长-④</p>
+<h2 id="9-哈希表-amp-哈希函数"><a href="#9-哈希表-amp-哈希函数" class="headerlink" title="9 哈希表&amp;哈希函数"></a>9 哈希表&amp;哈希函数</h2><p>hashcode()怎么实现：通过md5或者sha1<br>hashcode的性质：<br>① 输入域无限大；输出域有限大<br>② same input，same output<br>③ different input-&gt;may be same output<br>④ 离散性-<br>哈希表就是散列表，链表会均匀增长-</p>
+<p>HashMap常用函数<br>map.containsKey(“key”);<br>map.get(“key”);<br>map.remove(“key”);<br>map.keySet();<br>map.values();–String value : map.values();<br>map.entrySet();<br>HashMap原来是数组+链表，后为提升查找效率改为数组+红黑树</p>
+<p>实现RandomPool，要求实现GetRandom()平均概率取得元素<br>①设置两个HashMap KeyIndexMap&amp;IndexKeyMap<br>②在删除的时候将 要删除的元素的index与lastindex的key换一下。保证0-index之间的元素都存在-好方便GetRandom的时候使用Math.random()<br>③本以为一个map也可以做到,只有KeyIndexMap但是要知道你是无法根据value也就是index的值getKey的，HashMap只有value=map.get(key);<br>④只有IndexKeyMap也不行。在delete的时候是通过key找到那个entry的。如果只有IndexKeyMap难道要遍历找到值么？那就太麻烦了。</p>
+<h2 id="10-转圈打印矩阵"><a href="#10-转圈打印矩阵" class="headerlink" title="10.转圈打印矩阵"></a>10.转圈打印矩阵</h2><p>试图模拟下标i,j的变化是很难实现的。</p>
+<p>宏观调度的思维<br>① 先标记四个角的位置。<br>② 每次只打印关于这四个角的当前圈。<br>要解决的是：这四个角如何表示<br>我想的是r1,c1;r2,c2;r3,c3,r4,c4;<br>实际记录r1,c1,r2,c2表示对角即可</p>
+<h2 id="11-“之”字型打印矩阵"><a href="#11-“之”字型打印矩阵" class="headerlink" title="11.“之”字型打印矩阵"></a>11.“之”字型打印矩阵</h2><p>不可以将思路限制在下标的变化上</p>
+<p>(r1,c1)(r2,c2)最开始都表示(0,0)<br>然后(r1,c1)(r2,c2)分别一起开始移动<br>移动的策略分别是<br>(r1,c1)先向右直到不能移动时开始向下<br>(r2,c2)先向下直到不能移动时开始向右<br>还是那句话-——每次(r1,c1)(r2,c2)都一起动一下-然后开始PrintIncline()</p>
+<p>POINTS：<br>MoveR1C1(),MoveR2C2()是自己思考的方向，但是注意java的值传递。<br>结束循环打印的循环条件while(r1&lt;=rows&amp;&amp;r2&lt;=rows&amp;&amp;c1&lt;=colums&amp;&amp;c2&lt;=colums)<br>PrintIncline(A, r1, c1, r2, c2)的时候一种是从上往下打印，接下来是从下网上打印–设置flag！<br>暂时写好的代码没有flag设置</p>
+<h2 id="12-在行和列都排好序的数组中判断是否存在元素K"><a href="#12-在行和列都排好序的数组中判断是否存在元素K" class="headerlink" title="12.在行和列都排好序的数组中判断是否存在元素K"></a>12.在行和列都排好序的数组中判断是否存在元素K</h2><p>【要求】时间复杂度为O(N+M)，额外空间复杂度为O(1)<br>自己想的时间复杂度并没有真的减小还是N^2，只不过最后的真实值变小了而已<br>【正解】初始点 -——右上角的点。如果该点比K大，向下移动，如果比K小向左移动;<br>同理使用左下角也可以。但是不可以是左上角和右下角—-不会淘汰任何排元素</p>
 
 
                 
